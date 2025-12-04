@@ -8,7 +8,7 @@ import experiencia from "./componentes/experiencia";
 import StackTecnologias from "./componentes/stacktecnologias";
 import Proyectos from "./componentes/proyectos";
 import Habilidades from "./componentes/habilidades";
-import ToggleHabilidades from "./componentes/toggleHabilidades";
+import ToggleHabilidades from "./componentes/ToggleHabilidades";
 import FormularioTecnologia from "./componentes/formularioTecnologia";
 
 
