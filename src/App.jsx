@@ -73,7 +73,27 @@ function App() {
       {mostrarHabilidades && <Habilidades />}
     </>
   );
+}import { useState } from "react";
+import StackTecnologias from "./components/stacktecnologias";
+import FormularioTecnologia from "./components/FormularioTecnologia";
+
+function App() {
+  const [tecnologias, setTecnologias] = useState(["HTML", "CSS", "JavaScript"]);
+
+  const agregarTecnologia = (nueva) => {
+    setTecnologias((prev) => [...prev, nueva]);
+  };
+
+  return (
+    <>
+      <FormularioTecnologia agregarTecnologia={agregarTecnologia} />
+      <StackTecnologias tecnologias={tecnologias} />
+    </>
+  );
 }
 
 export default App;
+
+
+
 
