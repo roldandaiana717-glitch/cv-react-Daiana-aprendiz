@@ -73,7 +73,8 @@ function App() {
       {mostrarHabilidades && <Habilidades />}
     </>
   );
-}import { useState } from "react";
+}
+import { useState } from "react";
 import StackTecnologias from "./components/stacktecnologias";
 import FormularioTecnologia from "./components/FormularioTecnologia";
 
@@ -93,6 +94,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
