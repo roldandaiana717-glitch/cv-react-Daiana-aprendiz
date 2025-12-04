@@ -56,4 +56,24 @@ function App() {
   );
 }
 
+import { useState } from "react";
+import ToggleHabilidades from "./components/ToggleHabilidades";
+import Habilidades from "./components/Habilidades";
+
+function App() {
+  const [mostrarHabilidades, setMostrarHabilidades] = useState(true);
+
+  return (
+    <>
+      <ToggleHabilidades
+        mostrar={mostrarHabilidades}
+        setMostrar={setMostrarHabilidades}
+      />
+
+      {mostrarHabilidades && <Habilidades />}
+    </>
+  );
+}
+
 export default App;
+
